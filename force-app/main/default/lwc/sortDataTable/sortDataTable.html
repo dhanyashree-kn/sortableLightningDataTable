@@ -1,0 +1,15 @@
+<template>
+
+    <div style="height: 300px;">
+        <h1>Sortable Data Table - LWC</h1>
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}
+                hide-checkbox-column="true" 
+                sorted-by={sortBy}
+                sorted-direction={sortDirection}
+                onsort={handleSort}>
+        </lightning-datatable>
+    </div> 
+</template>
